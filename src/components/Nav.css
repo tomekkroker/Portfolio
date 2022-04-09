@@ -9,8 +9,9 @@ nav {
 
 .nav--title{
     font-family: 'Dela Gothic One', cursive;
+    font-weight: 300;
     margin-right: auto;
-    word-spacing:  6px;
+    word-spacing:  7px;
 }
 
 .nav--link{

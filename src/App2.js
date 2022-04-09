@@ -1,16 +1,17 @@
 import './App.css';
+import ProjectForm from './components/ProjectForm'
 import Nav from './components/Nav';
-import ProjectList from './components/ProjectList'
 import ProjectContextProvider from './components/ProjectContext';
-function App() {
+
+function App2() {
   return (
     <div className="App">
       <ProjectContextProvider>
       <Nav />
-      <ProjectList />
+      <ProjectForm/>      
       </ProjectContextProvider>
     </div>
   );
 }
 
-export default App;
+export default App2;
