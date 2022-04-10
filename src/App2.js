@@ -1,4 +1,3 @@
-import './App.css';
 import ProjectForm from './components/ProjectForm'
 import Nav from './components/Nav';
 import ProjectContextProvider from './components/ProjectContext';

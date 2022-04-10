@@ -9,6 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import App2 from './App2';
+import NotFound from './components/404page';
 
 
 
@@ -21,9 +22,7 @@ ReactDOM.render(
       <Route
           path="*"
           element={
-            <main style={{ padding: "1rem" }}>
-              <p>There's nothing here!</p>
-            </main>
+            <NotFound/>
           }
         />
     </Routes>

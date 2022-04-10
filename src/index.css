@@ -1,4 +1,5 @@
 body {
+  background-color: white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +12,140 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;;
+  height: 30px;
+  padding: 30px 25px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+}
+
+.nav--title{
+  font-family: 'Dela Gothic One', cursive;
+  font-weight: 300;
+  margin-right: auto;
+  word-spacing:  7px;
+  color: #1c1c1c;
+}
+
+.nav--link{
+  font-family: 'Dela Gothic One', cursive;
+  text-decoration: none;
+  padding: 10px 10px;
+  border: solid none;
+  color: #1c1c1c;
+}
+
+.nav--link:hover{
+  color: black;
+  background-color: whitesmoke;
+}
+
+
+.form--container{
+  padding: 70px 270px;
+  align-items: center;
+}
+
+form{
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 8%);
+  padding: 10px 30px;
+}
+
+.form--title{
+  color: #1c1c1c;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+input[type='text']{
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 6px 0;
+  border: 0;
+  background-color: #F2F3F5;
+}
+
+input[type='date']{
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 6px 0;
+  border: 0;
+  background-color: #F2F3F5;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+  background-color: #f3f4f6;
+}
+
+textarea{
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 97.7%;
+  height: 120px;
+  padding: 10px;
+  resize: none;
+  border: none;
+  border-radius: 5px;
+  margin: 0;
+  background-color: #F2F3F5;
+}
+
+
+.form--button {
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  border: 2px solid #555555;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.form--button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.list--body{
+  padding: 10px;
+}
+
+.MuiTableCell-root{
+  max-width: 100px;
+  word-wrap: break-word;
+}
+
+.notFound{
+  text-align: center;
+  color: #6e6e6e;
+  padding: 100px;
+}
+
+.notFound--404{
+  font-size: 126px;
+}
+

@@ -1,4 +1,3 @@
-import './App.css';
 import Nav from './components/Nav';
 import ProjectList from './components/ProjectList'
 import ProjectContextProvider from './components/ProjectContext';

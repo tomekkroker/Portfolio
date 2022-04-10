@@ -3,10 +3,10 @@ import { ProjectContext } from './ProjectContext';
 
 const ProjectForm = () => {
     const {dispatch} = useContext(ProjectContext);
-
+    const date = new Date().toJSON().slice(0, 10);
     const [ name, setName] = useState('');
-    const [ startDate, setStartDate] = useState('');
-    const [ endDate, setEndDate] = useState('');
+    const [ startDate, setStartDate] = useState(date);
+    const [ endDate, setEndDate] = useState(date);
     const [ description, setDescription] = useState('');
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -14,23 +14,30 @@ const ProjectForm = () => {
             name, startDate, endDate, description
         }});
         setName('');
-        setStartDate('');    
-        setEndDate('');
+        setStartDate(date);    
+        setEndDate(date);
         setDescription('');
     }
 
     return(
-        <div>
+        <div className='form--container'>
         <form onSubmit={handleSubmit}>
-            <input type='text' placeholder='project name' value={name}
-                onChange={(e) => setName(e.target.value)} required />
-            <input type='text' placeholder='start date' value={startDate}
+            <h1 className='form--title'>Nowy projekt</h1>
+            <hr></hr>
+            <input 
+                type='text' placeholder='Nazwa projektu' value={name}
+                onChange={(e) => setName(e.target.value)} required maxLength="32" />
+            <input 
+                type='date'  value={startDate} min='2000-01-01' max={endDate}
                 onChange={(e) => setStartDate(e.target.value)} required />
-            <input type='text' placeholder='end date' value={endDate}
+            <input 
+                type='date'  value={endDate} min={startDate} max='2030-01-01'
                 onChange={(e) => setEndDate(e.target.value)} required />
-            <input type='text' placeholder='description' value={description}
-                onChange={(e) => setDescription(e.target.value)} required />
-            <button type='submit'>submit</button>
+            <textarea 
+                placeholder='Opis' value={description}
+                onChange={(e) => setDescription(e.target.value)} 
+                required maxLength="400" />
+            <button className='form--button' type='submit'>Dodaj</button>
         </form>
         </div>
     );

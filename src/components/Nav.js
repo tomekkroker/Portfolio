@@ -1,7 +1,6 @@
-import './Nav.css';
 import { Link } from "react-router-dom";
 
-function Nav(props) {
+function Nav() {
   return (
       <nav>
         <h1 className='nav--title'>Portfolio Programisty</h1>
